@@ -1,0 +1,730 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Open Sans', sans-serif; 
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+h1 {
+	font-size: 60px;
+	color: #10407C;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 40px;
+	color: #10407C;
+	font-weight: bold;
+}
+
+h3 {
+	color: #10407C;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 18px;
+	color: #A0A0A0;
+}
+
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
+/* ************************ BACK TO TOP  ************************ */
+.back-to-top {
+	position: fixed;
+	z-index: 999;
+	background: #1AAEC6;
+    bottom: 66px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;  
+}
+
+.back-to-top:after {
+	content: '\f106';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+/* ************************ END: BACK TO TOP  ************************ */
+
+
+
+
+
+
+/* ************************ LOGIN PAGE  ************************ */
+.login-container {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 250px;
+}
+
+.inko-img {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 65px;
+}
+
+.inko-img img {
+	width: 240px;
+    height: 80px;
+}
+
+.login-form {
+	text-align: center;
+}
+
+.input-login label {
+	display: block;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.login-width {
+	width: 40%;
+    margin: 0 auto;
+    margin-top: 46px;
+}
+
+.input-login input {
+    width: 100%;
+    margin:0 auto;
+    padding: 4px 4px 4px 20px;
+	border: solid 1px #A0A0A0;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #4A4A4A;
+}
+
+.input-login input:focus {
+	border: solid 2px #35992C;
+}
+
+.login-form button {
+	background: #0087E2;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	padding: 13px 52px 13px 52px;
+	margin-top: 50px;
+	font-weight: bold;
+}
+
+.login-form button:hover {
+	opacity: 0.7;
+}
+/* ************************ END: LOGIN PAGE  ************************ */
+
+
+
+
+
+
+
+.top-container {
+	border-bottom: solid 1px #d9d9d9;
+	margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 999;
+}
+
+.icons-top, .logo {
+	display: inline-block;
+	vertical-align:middle;
+}
+
+.icons-top img {
+	width: 20px;
+    height: 20px;
+}
+
+.icons-top p {
+	font-size: 18px;
+	color: #A0A0A0;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.account-icon a i {
+	font-size: 22px;
+}
+
+ul li {
+	border-left: solid 1px #d9d9d9;
+	display: inline-block;
+	margin-right: -4px;
+	padding: 10px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.logo {
+    padding-left: 52px;
+	width: 18%;
+}
+.logo img {
+	height: 50px;
+	width: 50px;
+}
+
+.add-new p {
+	color: #0087E2;
+}
+
+.account-icon p {
+	color: #866692;
+}
+
+.add-new:hover,
+.logout:hover, .account-icon:hover {
+	background-color: #F5F5F5;
+}
+
+/* END: Top container */
+
+
+
+
+/* ************** INDEX PAGE ************** */
+/* Info Container */
+
+
+.content-table {
+	width: 95%;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
+.welcome-title {
+	margin:49px 0 40px 0;
+}
+
+ul.info-container {
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+li.count-button {
+	border: solid 1px #d9d9d9;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-right: -4px;
+}
+
+.count-button {
+	width: 18%;
+}
+
+.count-button p {
+    line-height: 63px;
+}
+
+.excel-form {
+	margin-bottom: 16px;
+}
+
+.excel-button {
+	color: #3499e6;
+	border: solid 2px #3499e6;
+	border-radius: 5px;
+	background: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.excel-button:hover {
+	background-color: #F5F5F5;
+}
+
+.info-medizin {
+    width: 80%;
+    padding: 0;
+    margin-right: -4px;
+    border: solid 1px #E1E1E1;
+    border-radius: 5px;
+}
+
+.title-medizin {
+    line-height: 60px;
+    padding-left: 20px;
+	border-bottom: solid 1px #d9d9d9;
+}
+
+.title-medizin h3 {
+	text-align: left;
+}
+
+.info-medizin table tr th {
+	font-size: 18px;
+    color: #10407C;
+    font-weight: bold;
+    text-align: left;
+    padding: 14px;
+}
+
+.info-table {
+	width: 68%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.info-table tbody td {
+	width: 60%;
+}
+
+.medizin-img {
+    display: inline-block;
+    width: 30%;
+    margin-right: 15px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+/* END: Info Container */
+
+
+
+/*table container*/
+.table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+
+thead tr {
+	background-color: #EDF6E8;
+	color: #10407C;
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+thead th {
+	cursor: pointer;
+	padding: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+tbody td {
+	color: #4A4A4A;
+	font-size: 16px;
+	padding:10px;
+	vertical-align: middle;
+    width: 11%;
+}
+
+tbody tr {
+	border-bottom: solid 1px #d9d9d9;
+}
+
+.table tbody tr:hover {
+    background: #E1E1E1;
+}
+
+
+
+
+.table-container {
+    border: solid 1px #d9d9d9;
+    border-radius: 5px;
+    margin: 0 auto;
+	width: 100%;
+}
+
+.table-in-container {
+	width: 98%;
+	margin: 0 auto;
+}
+
+.table-title, .dataTables_filter {
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px; 
+}
+
+.table-title {
+	float: left;
+}
+
+.dataTables_filter {
+	float: right;
+	width: 25%;
+	position: relative;
+}
+
+.dataTables_filter:before {
+	content: url('../img/search.svg');
+    width: 20px;
+	position: absolute;
+    left: 55px;
+    top: 20px;
+}
+
+.dataTables_filter input {
+	border: solid 1px #d9d9d9;
+	border-radius: 3px;
+    padding: 5px 0 6px 40px;
+    font-size: 15px;
+    width: 90%;
+}
+
+.dataTables_filter input::placeholder {
+	color: #d9d9d9;
+}
+
+.img-cont {
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.img-cont:hover {
+	background-color: #F5F5F5;
+}
+.img-cont img {
+	width: 20px;
+	height: 20px;
+}
+
+.edit {
+	border: solid 2px #0087E2;
+}
+
+.delete {
+	border: solid 2px #EF2D52;
+}
+
+.view {
+	border: solid 2px #35992C;
+}
+
+
+/*table container END*/
+/* ************** END: INDEX PAGE ************** */
+
+
+
+
+
+
+/* ************** -SHOW PAGE- AND -EDIT PAGE- ************** */
+
+.required {
+	color: red;
+    font-size: 14px;
+}
+
+.discard, .save {
+	display: inline-block;
+    border-left: solid 1px #d9d9d9;
+    line-height: 30px;
+    padding: 15px;
+    margin-left: -5px;
+}
+
+.discard:hover, .save:hover {
+	background-color: #F5F5F5;
+}
+
+.save span, .discard span {
+	font-size: 18px;
+	margin-left: 10px
+
+}
+.save span {
+	color: #35992C;
+	font-weight: bold;
+}
+
+.discard span {
+	color: #EF2D52;
+	font-weight: bold;
+}
+
+
+
+.select-cont {
+	padding: 15px;
+}
+
+.select-category {
+	margin-top: 10px; 
+}
+
+
+
+.show-table-container {
+	border: solid 1px #d9d9d9;
+    border-radius: 5px;
+    width: 100%;
+	margin: 0 auto;
+}
+
+.show-table {
+	width: 98%;
+	margin: 0 auto;
+	border-collapse: collapse;
+    border-spacing: 0;
+	text-align: left;
+	margin-top: 27px;
+}
+
+
+.show-table th, td {
+	text-align: left;
+}
+
+.show-table tbody tr {
+	border-bottom: solid 1px #d9d9d9;
+}
+
+.show-table tbody td {
+	width: 40%;
+}
+
+
+.show-table th {
+	width: 15%;
+	background: #EDF6E8;
+	padding: 15px;
+	color: #10407C;
+	font-weight: bold;
+	font-size: 18px;
+
+}
+
+.show-table td {
+    padding: 26.5px;
+}
+
+.show-table input,
+.show-table textarea {
+    width: 100%;
+    padding: 4px 4px 4px 20px;
+	border: solid 1px #A0A0A0;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #4A4A4A;
+}
+
+input::placeholder {
+	color: #E1E1E1;
+}
+
+.show-table input:focus {
+	border: solid 2px #35992C;
+}
+
+fieldset {
+	border: solid 1px #E1E1E1;
+	border-radius: 5px;
+}
+
+.details-text {
+	border-bottom: solid 1px #E1E1E1;
+}
+
+.save-delete button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.save-delete img {
+	width: 25px;
+	height: 25px;
+}
+
+.save-delete {
+	width: 55%;
+	display: inline-block;
+	text-align: right;
+    margin-left: 55px;
+}
+
+.details-buttons-container {
+	width: 100%;
+	border-bottom: solid 1px #E1E1E1;
+}
+
+.title-details {
+	width: 40%;
+	display: inline-block;
+	text-align: left;
+    padding: 15px;
+}
+
+
+
+
+
+.udate-cont {
+	width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    border: solid 1px #E1E1E1;
+    border-radius: 5px;
+
+}
+
+
+.udate-cont h4 {
+	color: #10407C;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.udate-cont h3 {
+	padding: 15px;
+}
+
+.date-time-cont {
+	border-top: solid 1px #E1E1E1;
+}
+
+
+.edit-img {
+	text-align: right;
+}
+
+
+
+.edit-img img {
+	width: 20px;
+	height: 20px;
+}
+
+.edit-img a {
+	font-size: 18px;
+    color: #0087E2;
+    padding: 18px 18px 13px 18px;
+    border-left: solid 1px #d9d9d9;
+}
+
+.edit-img a:hover {
+	background-color: #F5F5F5;
+}
+/* ************** END: -SHOW PAGE- AND -EDIT PAGE- ************** */
+
+
+
+
+
+
+/* ************** -UPDATE PAGE- AND -ADD PAGE- ************** */
+
+.home-white {
+	color: white;
+	text-decoration: none;
+}
+
+/* ************** END: -UPDATE PAGE- AND -ADD PAGE- ************** */
+
+
+
+
+
+/* ************** DELETE PAGE ************** */
+
+.delete-info {
+	padding-top: 100px;
+	text-align: center;
+}
+
+.delete-info button {
+	color: #3499e6;
+    border: solid 2px #3499e6;
+    border-radius: 5px;
+    background: white;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.delete-info button:hover {
+	background-color: #F5F5F5; 
+}
+
+.delete-info form {
+	margin-top: 40px;
+}
+
+/* ************** DELETE PAGE ************** */
+
+
+
+
+
+
+
+
+
+
+
+
