@@ -1,10 +1,10 @@
 
 <?php  
 session_start();
-$localhost = "dedi1453.your-server.de"; 
-$username = "mediab_inko"; 
-$password = "QRiJccgZUN4fWszE"; 
-$dbname = "mediab_db31"; 
+$localhost = "localhost"; 
+$username = "root"; 
+$password = ""; 
+$dbname = "idealo_app"; 
  
 // create connection 
 $connect = new mysqli($localhost, $username, $password, $dbname); 
@@ -15,6 +15,7 @@ if($connect->connect_error) {
 } else {
     // echo "Successfully Connected";
 }
+
   
 ?>
 

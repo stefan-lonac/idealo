@@ -1,12 +1,12 @@
 <?php 
     include 'header.php';
-        require_once 'connections.php';
+    require_once 'connections.php';
 ?>
 
 <div class="content-table">
     <fieldset>
      
-        <form action="add.php" method="post" >
+        <form action="add.php" method="post">
 
             <div class="details-buttons-container">
                 <div class="title-details">

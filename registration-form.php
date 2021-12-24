@@ -1,8 +1,7 @@
-<?php require_once 'connections.php'; 
-      include 'header.php';
-
+<?php 
+    require_once 'connections.php';  
+    include 'header.php';
 ?>
-
 
 
 <!doctype html>

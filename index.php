@@ -4,7 +4,6 @@
     include_once "write-biliger.php";
     include 'header.php';
  
-
    $sqlUser    = "SELECT * FROM login_table WHERE id='".$_SESSION['username']."'";
    $query      = $connect->query($sqlUser);
    $user       = $query->fetch_array(); 
@@ -43,19 +42,19 @@
             <table class="info-table">
                 <tr>
                     <th>E-mail</th>
-                    <td><p>dejan@pavlovic.com</p></td>
+                    <td><p>test@test.com</p></td>
                 </tr> 
 
                 <tr>   
                     <th>Password</th>
-                    <td><p>Tarinja2</p></td>
+                    <td><p>Test</p></td>
                 </tr>
 
                 <tr>
                     <th>URL</th>
                     <td>
-                        <a href="https://www.idealo.de/" target="_blank">
-                            <p>www.idealo.de</p>
+                        <a href="https://www.test.com/" target="_blank">
+                            <p>www.test.com</p>
                         </a>
                     </td>
                 </tr>

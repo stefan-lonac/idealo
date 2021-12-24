@@ -3,7 +3,6 @@
     header('Content-Type: text/html; charset=utf8mb4_general_ci');
     require_once 'connections.php';
 
- 
     if($_POST) {
       $nameComma                    = $_POST['Produktname'];
         $name                       = str_replace(",", "", $_POST['Produktname']);
@@ -41,7 +40,6 @@
         $Kommentar                  = 'Für die Lieferung innerhalb Deutschlands berechnen wir pauschal 6.90 euro pro Lieferung, unabhangig vom Gewicht der Lieferung innerhalb Deutschlands. Ab einer Bestellung in Hohe von 150.00 euro liefern wir portofrei.';
         $usernames                  = $_SESSION['username'];
 
-
         $sql = "INSERT INTO app_table (
             Artikelnummer_im_Shop,
             EAN_GTIN_Barcodenummer_UPC,
@@ -71,9 +69,9 @@
             '$Herstellerartikelnummern',
             '$brand',
             '$name',
-            '$price',
+            '$priceComma',
             '$Lieferzeit',
-            '$Produktbeschreibung',
+            '$ProduktbeschreibungComma',
             '$url',
             '$BildURL_1',
             '$Old_price',
@@ -88,15 +86,15 @@
             '$Kommentar',
             '$usernames'
         )";
-
+        var_dump($connect);
         if($connect->query($sql) === TRUE) {
             // Back to homepage after success
             header('Location: index.php');
+            $connect->close();
         } else {
             echo "Error " . $sql . ' ' . $connect->connect_error;
         }
      
-        $connect->close();
     }
 
 ?><!-- 
